@@ -11,5 +11,5 @@
 well everything so far ^^. but:
 
 - california map as background image in css.
-- # Project_CaliforniaCalling
-# Project_CaliforniaCalling
+
+
