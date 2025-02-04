@@ -28,20 +28,25 @@ p {
     font-family: var(--fontinter);
 }
 
-/* california calling */
+/* ! california calling */
 h1 {
     font-family: var(--fontinter);
     font-size: 9.6rem;
     color: white;
+    width: 700px;
+    margin: 30px auto;
 }
 
 h1 span {
-    font-family: var(--fontinter);
+    font-family: var(--fontwork);
     /* outline effect */
     color: black;
     text-shadow: -1px -1px 0 white, 1px -1px 0  white, -1px 1px 0  white, 1px 1px 0  white;
+
     text-align: center;
+    font-weight: 700;
 }
+
 
 /* headline in the articles */
 h2 {
@@ -64,12 +69,26 @@ h4 {
 }
 
 
+a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: white solid 1px;
+    font-size: 2rem;
+}
+
+a:hover {
+    color: black;
+    background-color: white;
+}
+
 /* ! HERO */
 header .hero {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 100px 100px;
+    height: 100vh;
+    padding: 30vh 6vw;
 }
 
 .hero h1 {
@@ -77,46 +96,59 @@ header .hero {
     line-height: 90%;
 }
 
-main section {
-    margin-bottom: 50px;
+.hero div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20vh;
 }
-/* #ich hätte erwartet, dass ich damit unten die sections verlängere */
+
+.hero p {
+    font-size: 2rem;
+    font-family: var(--fontwork);
+}
+
+
+/* ! MAIN  */
+main section {
+    padding: 50px 0;
+}
 
 
 /* ! MAIN NUMBERS */
 main .numbers {
     background-color: black;
-    padding: 0 6vw;
+    padding: 50px 6vw;
 }
 
 main .numbers div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 6vw;
+    /* padding: 0 6vw; */
+    margin-top: -50px;
 }
 
-.numbers div div {
-    background: url(../img/map.svg);
-    height: 200px;
-    width: 200px;
-    justify-content: end;
-   
+.numbers article {
+    padding: 50px;
 }
 
-.numbers div article h3 {
+.numbers img {
+    width: 450px;
+}
+
+.numbers h3 {
     color: white;
     font-weight: 200;
-    
 }
 
-main .numbers p {
+.numbers p {
     color: white;
     font-size: 9.4rem;
     font-family: var(--fontinter);
     line-height: 90%;
     margin-bottom: 50px;
 }
+
 
 /* ! MAIN MIDDLE */
 main .middle {
@@ -159,5 +191,52 @@ main .poppy {
 /* ! FOOTER */
 
 footer {
-    background-color: teal;
+    background-color: black;
+}
+
+/* ! FooterTop */
+.footertop {
+    padding: 50px;
+}
+
+.footertop p:first-of-type {
+    font-size: 1.2rem;
+    font-family: var(--fontwork);
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footertop p:nth-of-type(2) {
+    font-size: 2.4rem;
+    font-family: var(--fontinter);
+    margin-bottom: 30px;
+    color: white;
+    width: 35%;
+}
+
+/* ! FooterBottom */
+
+.footerbottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.footerbottom .socials img {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+}
+
+.footerbottom .socials p {
+    color: white;
+    font-family: var(--fontwork);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.footerbottom .logos img {
+    /* width: 60px; */
+    height: 60px;
+    padding: 5px;
 }
