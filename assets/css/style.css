@@ -39,8 +39,8 @@ h1 span {
     font-family: var(--fontinter);
     /* outline effect */
     color: black;
-    background-color: black;
     text-shadow: -1px -1px 0 white, 1px -1px 0  white, -1px 1px 0  white, 1px 1px 0  white;
+    text-align: center;
 }
 
 /* headline in the articles */
@@ -70,6 +70,11 @@ header .hero {
     color: white;
     text-align: center;
     padding: 100px 100px;
+}
+
+.hero h1 {
+    text-align: center;
+    line-height: 90%;
 }
 
 main section {
