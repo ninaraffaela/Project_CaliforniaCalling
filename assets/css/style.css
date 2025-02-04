@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "worksans";
+    src: url(../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "inter";
+    src: url(../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --fontwork: "worksans";
+    --fontinter: "inter";
+    --sizehero: 9.4rem;
+}
+p {
+    font-family: var(--fontinter);
+}
+
+h2 {
+    font-family: var(--fontinter);
+    font-size: 8.4rem;
+    font-weight: 700;
+}
+h4 {
+    /* for article nr and author */
+    font-size: 2rem;
+    font-family: var(--fontwork);
+    font-weight: 400;
+}
+
+
+footer {
+    background-color: teal;
+}
