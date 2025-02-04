@@ -23,22 +23,85 @@ html {
     --fontinter: "inter";
     --sizehero: 9.4rem;
 }
+
 p {
     font-family: var(--fontinter);
 }
 
+/* california calling */
+h1 {
+    font-family: var(--fontinter);
+    font-size: 9.6rem;
+    color: white;
+}
+
+h1 span {
+    font-family: var(--fontinter);
+    /* outline effect */
+    color: black;
+    background-color: black;
+    text-shadow: -1px -1px 0 white, 1px -1px 0  white, -1px 1px 0  white, 1px 1px 0  white;
+}
+
+/* headline in the articles */
 h2 {
     font-family: var(--fontinter);
     font-size: 8.4rem;
     font-weight: 700;
 }
+
+/* mini text over the numbers */
+h3 {
+    font-family: var(--fontwork);
+    font-size: 1.4rem;
+}
+
+/* for article nr and author */
 h4 {
-    /* for article nr and author */
     font-size: 2rem;
     font-family: var(--fontwork);
     font-weight: 400;
 }
 
+
+/* ! HERO */
+header .hero {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 100px 100px;
+}
+
+/* ! MAIN NUMBERS */
+main .numbers {
+    background-color: black;
+}
+
+main .numbers p {
+    color: white
+}
+
+/* ! MAIN MIDDLE */
+main .middle {
+    
+}
+
+/* ! MAIN GOLDEN */
+main .golden {
+    background-color: black;
+    color: white;
+}
+
+
+/* ! MAIN POPPY */
+main .poppy {
+
+}
+
+
+
+
+/* ! FOOTER */
 
 footer {
     background-color: teal;

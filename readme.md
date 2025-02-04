@@ -2,9 +2,10 @@
 
 ## questions?
 
-- how do i define a proper h1?
+- how do i define a proper h1? 
+    california calling as h1, define width so it breaks. span for the second word 
 - is there an easy way to alternate the sections in the body? (odd/even maybe?)
-- how do i give Calling the outline text?
+- how do i give Calling the outline text? 
 
 ## open
 
