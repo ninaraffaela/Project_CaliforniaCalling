@@ -72,19 +72,69 @@ header .hero {
     padding: 100px 100px;
 }
 
+main section {
+    margin-bottom: 50px;
+}
+/* #ich hätte erwartet, dass ich damit unten die sections verlängere */
+
+
 /* ! MAIN NUMBERS */
 main .numbers {
     background-color: black;
+    padding: 0 6vw;
+}
+
+main .numbers div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 6vw;
+}
+
+.numbers div div {
+    background: url(../img/map.svg);
+    height: 200px;
+    width: 200px;
+    justify-content: end;
+   
+}
+
+.numbers div article h3 {
+    color: white;
+    font-weight: 200;
+    
 }
 
 main .numbers p {
-    color: white
+    color: white;
+    font-size: 9.4rem;
+    font-family: var(--fontinter);
+    line-height: 90%;
+    margin-bottom: 50px;
 }
 
 /* ! MAIN MIDDLE */
 main .middle {
-    
+    padding: 0 30vw;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+/* #ausrichtung anpassen. wenn position der bilder dazukommt wird das vermutlich ganz anders gelöst */
 }
+
+.middle h2 {
+    font-size: 8.4rem;
+    font-family: var(--fontinter);
+}
+
+.middle p {
+    font-family: var(--fontwork);
+    font-size: 1.6rem;
+}
+
 
 /* ! MAIN GOLDEN */
 main .golden {
