@@ -24,6 +24,10 @@ html {
     --sizehero: 9.4rem;
 }
 
+img {
+    max-width: 100%;
+}
+
 p {
     font-family: var(--fontinter);
 }
@@ -81,6 +85,7 @@ a:hover {
     color: black;
     background-color: white;
 }
+
 
 /* ! HERO */
 header .hero {
@@ -152,24 +157,94 @@ main .numbers div {
 
 /* ! MAIN MIDDLE */
 main .middle {
-    padding: 0 30vw;
+    /* padding: 200px 40vw; */
     display: flex;
-    flex-direction:column;
-    align-items: center;
+    align-content: center;
     justify-content: center;
-    text-align: center;
-    margin-bottom: 50px;
-/* #ausrichtung anpassen. wenn position der bilder dazukommt wird das vermutlich ganz anders gelöst */
+
+    /* padding-left: 438px; */
+
+    position: relative;
+}
+
+.middle div {
+    width: 450px;
 }
 
 .middle h2 {
     font-size: 8.4rem;
     font-family: var(--fontinter);
+    
+    /* width: 860px; */
+    /* # NEVER EVER FESTE HÖHE height: 185px; */
+
+    padding-top: 410px;
+    /* padding-right: 430px; */
 }
 
-.middle p {
+.middle p:first-of-type {
     font-family: var(--fontwork);
     font-size: 1.6rem;
+
+    /* padding-right: 465px; */
+    padding-bottom: 680px;
+}
+
+.middle p:nth-of-type(2){
+    font-family: var(--fontwork);
+    font-size: 1.6rem;
+    /* padding-right: 443px; */
+    margin-bottom: 310px;
+}
+
+
+/* ! action imgs */
+
+.middle img {
+    position: absolute;
+    width: 330px;
+    height: 220px;
+}
+
+.middle img:first-of-type {
+    top: -50px;
+    right: 100px;
+}
+
+.middle img:nth-of-type(2) {
+    top: 280px;
+    left: 55px;
+    width: 275px;
+    height: 180px;
+}
+
+.middle img:nth-of-type(3) {
+    top: 665px;
+    right: 0px;
+}
+
+.middle img:nth-of-type(4) {
+    top: 875px;
+    left: 220px;
+}
+
+.middle img:nth-of-type(5) {
+    bottom: 583px;
+    right: 165px;
+}
+
+.middle img:nth-of-type(6) {
+    left: 0px;
+    bottom: 320px;
+    width: 275px;
+    height: 180px;
+}
+
+.middle img:nth-of-type(7) {
+    bottom: -55px;
+    right: 275px;
+    width: 440px;
+    height: 230px;
 }
 
 
