@@ -12,6 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid teal;
 }
 
 html {
@@ -67,9 +68,9 @@ h3 {
 
 /* for article nr and author */
 h4 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family: var(--fontwork);
-    font-weight: 400;
+    font-weight: 300;
 }
 
 
@@ -244,7 +245,8 @@ main .middle {
     bottom: -55px;
     right: 275px;
     width: 440px;
-    height: 230px;
+    height: 290px;
+    z-index: 1;
 }
 
 
@@ -252,12 +254,135 @@ main .middle {
 main .golden {
     background-color: black;
     color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+}
+
+.wrapper{
+    padding-top: 160px;
+    padding-bottom: 740px;
+
+    display: flex;
+    position: relative;
+}
+
+.wrapper div:first-of-type {
+    width: 440px;
+}
+
+.wrapper div:nth-of-type(2) {
+    width: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.golden p {
+    font-size: 2.9rem;
+    font-family: var(--fontinter);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* ! golden imgs */
+.golden .greybear {
+    width: 730px;
+    height: 730px;
+
+    position: absolute;
+    left: 110px;
+    bottom: -167px;
+}
+
+.golden .gb2 {
+    width: 366px;
+    height: 473px;
+
+    position: absolute;
+    left: 778px;
+    bottom: -76px;
+}
+
+/* ! Golden Animation */
+.golden article {
+    /* background-color: salmon;
+    border: solid red 1px; */
+    width: 410px;
+    height: 410px;
+
+    position: absolute;
+    bottom: -320px;
+    right: -135px;
+    
+    transform: all 0.5s 0s;
+}
+
+.golden article img {
+    transform: rotate(180deg);
+    object-fit: contain;
+    animation: drehen 10s linear infinite 0.5s;
 }
 
 
 /* ! MAIN POPPY */
 main .poppy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    position: relative;
+}
+
+
+
+.w2{
+    padding-top: 400px;
+    padding-bottom: 740px;
+
+    display: flex;
+    position: relative;
+}
+
+.w2 div:first-of-type {
+    width: 440px;
+}
+
+.w2 div:nth-of-type(2) {
+    width: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.poppy p {
+    font-size: 2.9rem;
+    font-family: var(--fontinter);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* ! poppy imgs */
+.poppy .p3 {
+    width: 360px;
+    height: 470px;
+
+    position: absolute;
+    left: 170px;
+    bottom: -50px;
+}
+
+.poppy .rosebear {
+    width: 730px;
+    height: 730px;
+
+    position: absolute;
+    left: 475px;
+    bottom: -76px;
 }
 
 
@@ -267,6 +392,7 @@ main .poppy {
 
 footer {
     background-color: black;
+    margin-top: 100px;
 }
 
 /* ! FooterTop */
@@ -301,6 +427,7 @@ footer {
     width: 30px;
     height: 30px;
     padding: 3px;
+    margin-bottom: 15px;
 }
 
 .footerbottom .socials p {
@@ -314,4 +441,19 @@ footer {
     /* width: 60px; */
     height: 60px;
     padding: 5px;
+}
+
+
+
+/* ! Animation GoldenBear */
+
+@keyframes drehen {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+    
 }
